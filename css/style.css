@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*
+{
+    padding: 0px;
+    margin: 0px;
+    
+}
+#timer
+{
+    font-size: 55px;
+    text-align: center;
+}
+body
+{
+    height: 100%;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+}
+.bg
+{
+    height: 100%;
+    background-image: url(../imgs/islamic-night-with-a-mosque-silhouette-against-a-sunset-sky-moonlit-and-holy-ambiance-depicted-in-an-islamic-wallpaper-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.time
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 80px 100px 80px;
+}
+.counter
+{
+    align-self: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.time div
+{
+    margin: 10px 0px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 40px;
+    font-size: 28px;
+    min-width: 150px;
+}
+.place
+{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.time div h3
+{
+    display: inline;
+}
+select
+{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+
+@media (max-width:620px)
+{
+    .time
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px 100px 0px;
+    }
+    .time div h3
+    {
+        font-size: 25px;
+    }
+    #timer
+    {
+        font-size:40px;
+    }
+    #timer span
+    {
+        display: block;
+    }
+
+    .bg{
+        background-position:7%;
+        background-size: cover;
+    }
+}
